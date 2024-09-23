@@ -127,9 +127,13 @@ DEPARTAMENTO DE CIENCIA DE LA COMPUTACION
   \cdot g$ también admiten FPRAS.
 
 \item Para cada $n \in \mathbb{N}$, sea $f_n : \Sigma^* \to
-  \mathbb{N}$ una función que admite un FPRAS, y sea $f : \Sigma^* \to
-  \mathbb{N}$ una función definida de la siguiente forma para cada $x
-  \in \Sigma^*$:
+  \mathbb{N}$ una función que admite un FPRAS $\cA_n$, donde el número
+  de pasos ejecutados por $\cA_n(x, \varepsilon)$ está acotado
+  superiormente por $p_n(|x|, \frac{1}{\varepsilon})$ para un
+  polinomio fijo $p_n$. Además, suponga que existe un polinomio
+  $p(u, v)$ que acota superiormente a $p_n(u, v)$ para cada $n \in \mathbb{N}$.
+  Sea $f : \Sigma^* \to \mathbb{N}$ una función definida de la
+  siguiente forma para cada $x \in \Sigma^*$:
   \begin{eqnarray*}
     f(x) &=& \sum_{i=0}^{|x|} f_i(x).
   \end{eqnarray*}
